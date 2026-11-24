@@ -56,13 +56,13 @@
     },
     {
       "id": "ragesaq-002",
-      "title": "OpenXR VR client for Allegiance",
+      "title": "OpenXR VR client for Allegiance, on AllegianceCore",
       "owner": "ragesaq",
-      "status": "idea",
+      "status": "active",
       "needs": [
         "ragesaq-001"
       ],
-      "next": "Read knowledge/openxr-port-survey.md, then choose the rendering path (D3D9 interop vs renderer port) with the operator and define the first milestone: a stereo view of the game scene in a headset with the flat HUD on a quad layer.",
+      "next": "ragesaq decided 2026-11-24 to build the VR client on AllegianceCore (knowledge/openxr-port-survey.md, memory/mem-003). ragesaq is creating the fork of dominusbelial/AllegianceCore-public. Then: enroll the fork in HyperBench, survey its MonoGame renderer for an OpenXR binding (GL context and texture access, per-eye cameras, HUD), and define milestone 1 there: the game scene in a headset with the HUD on a quad layer.",
       "links": [
         "knowledge/openxr-port-survey.md"
       ],
