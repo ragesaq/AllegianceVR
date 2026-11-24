@@ -82,15 +82,17 @@ commit `e98c3185`, HyperBench 0.43.0). [`STARTER_MANIFEST.json`](STARTER_MANIFES
 
 ### Cross-family review route
 
-- **Every author: the automatic route** of the installed reviewer-parity matrix (ragesaq, 2026-11-24: use the rules
-  from the operator's other Port and Socket projects). The matrix walks its automatic order and skips the author's
-  family. The installed matrix and the host's reviewed registry are authoritative; this file names no model.
-- **Socket/Codex:** use the package-owned `hyperreview-xfam-route` skill and its selector, with the declared author
-  tuple and a refreshed host registry. **Port:** use its host's installed automatic-route adapter.
-- A failed launch or missing provenance makes that candidate unusable for the run: take the next eligible candidate
-  and record the fallthrough. If no route is available, record `escalate-unavailable` and ask ragesaq. Never
-  substitute a same-family review and call it independent.
-- Each posted review names this section as the route's source, with the matrix version.
+- **Default reviewer: `deepseek-v4.1-flash` at `high`, through OpenCode Go, explicit selection** (ragesaq,
+  2026-11-24: "deepseek v4.1 flash, which should be the default reviewer for this project"). `high` is the only
+  effort at which the reviewer-parity matrix gives it standing. It is a non-Anthropic family, so it reviews Port's
+  work; for a change Socket authors, check that the installed matrix still puts it outside Socket's family.
+- **Socket/Codex:** use the package-owned `hyperreview-xfam-route` skill and its selector with this reviewer named
+  explicitly, the declared author tuple and a refreshed host registry. **Port:** use its host's cross-family review
+  launcher with these coordinates.
+- An OpenCode Go 429 ("at capacity") is retried once after a pause. If the route is still unavailable, or a launch
+  fails or its effective provenance does not match, record `escalate-unavailable` and ask ragesaq. Do not fall
+  through to another reviewer without that answer. Never substitute a same-family review and call it independent.
+- Each posted review names this section as the route's source, with the matrix version and hash.
 
 ## Agent identity contract
 
