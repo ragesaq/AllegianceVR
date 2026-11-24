@@ -338,3 +338,9 @@ src/Pigs/**/AGCLib.dll
 
 # HyperBench recall cache (word index, vectors, model copy); per working tree, never committed
 /.hyperbench-recall/
+
+# Review wrapper state and launcher logs hold machine paths; only summary.md and receipt.md are committed
+# (activity.log is already covered by *.log)
+/.hyperreview/*/run_state.json
+/.hyperreview/*/launcher.txt
+/.hyperreview/*/launcher.out

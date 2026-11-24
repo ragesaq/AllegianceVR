@@ -10,7 +10,7 @@ stays in history even after a later commit removes it.
 3. **No personal or host details.** No email addresses (other than an agent's noreply commit address), real names
    beyond public GitHub handles, host names, device serials or machine paths. Describe a machine by its role ("the VR
    test PC").
-4. **No game assets or code from other projects** beyond what the upstream GPL licence and the fork already carry.
+4. **No game assets or code from other projects** beyond what the upstream MIT licence and the fork already carry.
    Link to a third-party source rather than copying it.
 
 `python tools/check_data_boundary.py` is a narrow tripwire for the obvious secret shapes. It does not replace reading

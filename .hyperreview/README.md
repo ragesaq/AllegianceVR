@@ -4,6 +4,24 @@ One folder per cross-family review, newest first. Each folder holds the reviewer
 `receipt.md`. The reviewer's activity logs and wrapper state stay on the reviewing host (`GROUND_RULES.md` rule 3).
 The route is set in `AGENTS.md`, "Cross-family review route".
 
+## 2026-11-24: PR #1 HyperBench enrollment, round 2
+
+- Record: [summary](patch-review-2026-11-24T07-44-22Z-hyperbench-enrollment-r2/summary.md),
+  [receipt](patch-review-2026-11-24T07-44-22Z-hyperbench-enrollment-r2/receipt.md)
+- The committed summary is the reviewer's text with two machine paths replaced by `<work-root>` and
+  `<hub-clone>` (`GROUND_RULES.md` rule 3). Nothing else was changed.
+- Reviewed head `1a852c0`, tree `fbaa906`, the delta `6d523f8..1a852c0` that answers round 1. Reviewer
+  `deepseek-v4.1-flash` via OpenCode Go at `high`, explicit selection, matrix 4.14.0.
+- Verdict: PASS-WITH-CONDITIONS. All four round 1 findings closed, and the committed round 1 summary is
+  byte-identical to the original. New finding and dispositions:
+  1. Medium (latent): the review wrapper writes `run_state.json`, `launcher.txt` and `launcher.out` into the review
+     folder, none of them ignored, and `check_data_boundary.py` does not match machine paths. Fixed: `.gitignore`
+     ignores the three files under `/.hyperreview/*/`; `activity.log` was already covered by `*.log`.
+  - Observation: the manifest's list of starter files left out `GROUND_RULES.md`. Fixed.
+  - Observation: the `ragesaq-001` node said "the commit after 6d523f8" without a hash. Fixed: it names `1a852c0`.
+  - Found by the author, not the reviewer: `GROUND_RULES.md` rule 4 called the upstream licence GPL. Allegiance is
+    MIT (Microsoft relicensed it in 2017). Fixed.
+
 ## 2026-11-24: PR #1 HyperBench enrollment, round 1
 
 - Record: [summary](patch-review-2026-11-24T07-33-36Z-hyperbench-enrollment-r1/summary.md),
