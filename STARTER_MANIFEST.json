@@ -1,5 +1,5 @@
 {
-  "about": "How this repo relates to the HyperBench hub its conventions came from. Existing-fleet adoption (hub docs/ADOPT_EXISTING_REPO.md): what was copied is host-owned; later hub changes arrive only by an intentional reconciliation PR here. hyperbenchVersion is source provenance only. At operator direction only the memory, decision and orientation surfaces are adopted (memory/mem-001). line-endings is skipped because its checker requires every tracked file to be LF, and this fork keeps upstream FreeAllegiance files byte-identical (about 314 are committed with CRLF) so upstream merges stay clean; HyperBench-owned paths get scoped eol=lf rules in .gitattributes instead. tools/check_map.py is changed only to compare against origin/master, this fork's default branch.",
+  "about": "How this repo relates to the HyperBench hub its conventions came from. Existing-fleet adoption (hub docs/ADOPT_EXISTING_REPO.md): what was copied is host-owned; later hub changes arrive only by an intentional reconciliation PR here. hyperbenchVersion is source provenance only. Scope set by the operator (memory/mem-001): memory, work map, knowledge, recall with vectors, the lifecycle skill and the data-boundary tripwire, with the two-agent collaboration rules from the operator's other projects in AGENTS.md. line-endings is skipped because its checker requires every tracked file to be LF, and this fork keeps upstream FreeAllegiance files byte-identical (about 314 are committed with CRLF) so upstream merges stay clean; HyperBench-owned paths get scoped eol=lf rules in .gitattributes instead. tools/check_map.py is changed only to compare against origin/master, this fork's default branch.",
   "starterSource": "PsiClawOps/hyperbench",
   "starterVersion": "e98c31857bc8a76e8a42a65a78da27031a56fbf3",
   "hyperbenchVersion": "0.43.0",
@@ -9,11 +9,12 @@
       "memory",
       "work-map",
       "knowledge",
-      "lifecycle-skill"
+      "data-boundary",
+      "lifecycle-skill",
+      "recall"
     ],
     "skipped": [
       "catalog",
-      "data-boundary",
       "line-endings",
       "people",
       "projects",
@@ -30,6 +31,9 @@
     "memory/CANARY.md",
     "knowledge/README.md",
     ".gitattributes",
-    "tools/check_map.py"
+    "tools/check_map.py",
+    "GROUND_RULES.md",
+    "RECALL_GLOSSARY.json",
+    ".gitignore"
   ]
 }

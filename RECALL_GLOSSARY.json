@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "hyperbench.recall-glossary/v1",
+  "about": "Everyday words mapped to this repository's own terms, used only to widen a recall search (tools/recall.py, docs/RECALL.md). Each target in 'terms' must be a whole search term found in a searchable source file; 'python tools/recall.py check-glossary' checks that, and this file is never indexed. Add the words people actually ask with; keep targets to terms the notes use.",
+  "entries": [
+    {"words": ["self-test", "self test", "prove the search works", "known fact"],
+     "terms": ["canary"]},
+    {"words": ["trust level", "how sure", "confidence"],
+     "terms": ["class", "verified", "inferred"]},
+    {"words": ["to-do list", "todo", "backlog", "task list"],
+     "terms": ["work map"]},
+    {"words": ["headset", "virtual reality", "hmd", "steamvr", "quest"],
+     "terms": ["OpenXR"]},
+    {"words": ["directx", "direct3d", "graphics api", "renderer"],
+     "terms": ["D3D9"]},
+    {"words": ["64-bit", "x64", "32-bit", "bitness"],
+     "terms": ["Win32"]},
+    {"words": ["head tracking", "look around", "head look"],
+     "terms": ["head pose"]},
+    {"words": ["overlay", "cockpit display", "radar", "indicators"],
+     "terms": ["HUD"]},
+    {"words": ["motion sickness", "nausea", "sick"],
+     "terms": ["comfort"]}
+  ]
+}

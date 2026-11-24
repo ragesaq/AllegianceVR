@@ -335,3 +335,6 @@ src/Pigs/**/AGCLib.dll
 /src/build
 
 /build
+
+# HyperBench recall cache (word index, vectors, model copy); per working tree, never committed
+/.hyperbench-recall/

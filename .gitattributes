@@ -15,9 +15,11 @@
 # HyperBench-owned, fork-only paths (see AGENTS.md): LF in every checkout,
 # whatever core.autocrlf says. Upstream files keep the rules above.
 /AGENTS.md text eol=lf
+/GROUND_RULES.md text eol=lf
 /STARTER_MANIFEST.json text eol=lf
 /DAG.json text eol=lf
 /LEDGER.md text eol=lf
+/RECALL_GLOSSARY.json text eol=lf
 /memory/** text eol=lf
 /knowledge/** text eol=lf
 /docs/** text eol=lf
