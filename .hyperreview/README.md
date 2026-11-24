@@ -4,6 +4,19 @@ One folder per cross-family review, newest first. Each folder holds the reviewer
 `receipt.md`. The reviewer's activity logs and wrapper state stay on the reviewing host (`GROUND_RULES.md` rule 3).
 The route is set in `AGENTS.md`, "Cross-family review route".
 
+## 2026-11-24: PR #1 HyperBench enrollment, round 3
+
+- Record: [summary](patch-review-2026-11-24T07-56-50Z-hyperbench-enrollment-r3/summary.md),
+  [receipt](patch-review-2026-11-24T07-56-50Z-hyperbench-enrollment-r3/receipt.md)
+- The committed summary is the reviewer's text, unchanged (it holds no machine paths).
+- Reviewed head `2ef4cf4`, tree `7b46e78`, the delta `1a852c0..2ef4cf4` that answers round 2. Reviewer
+  `deepseek-v4.1-flash` via OpenCode Go at `high`, explicit selection, matrix 4.14.0.
+- Verdict: PASS. The round 2 finding and both observations are closed; the redacted round 2 summary differs from
+  the original by exactly the two stated lines; the licence fix matches upstream `LICENSE` at `c106531`. Two
+  informational notes, no action taken:
+  - The ignore rules match one folder level under `.hyperreview/`, which is where the launcher writes today.
+  - The manifest's list of starter files does not name `STARTER_MANIFEST.json` itself; the list is descriptive.
+
 ## 2026-11-24: PR #1 HyperBench enrollment, round 2
 
 - Record: [summary](patch-review-2026-11-24T07-44-22Z-hyperbench-enrollment-r2/summary.md),
