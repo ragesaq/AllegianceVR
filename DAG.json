@@ -44,8 +44,10 @@
       "needs": [
         "ragesaq-000"
       ],
-      "next": "Enrollment PR from branch port/hyperbench-enrollment awaits the operator's review and merge. After merge, the first session here flips this node to done with its ledger line, and updates the central map row in ragesaq/hyperbench-central-ragesaq.",
+      "next": "Enrollment PR #1 (branch port/hyperbench-enrollment) awaits the operator's review and merge. The central index row and project node saq-021 are in ragesaq/hyperbench-central-ragesaq#19, stacked on #18. After #1 merges, the first session here flips this node to done with its ledger line, and moves the central row from 'Enablement in flight' to adopted.",
       "links": [
+        "https://github.com/ragesaq/AllegianceVR/pull/1",
+        "https://github.com/ragesaq/hyperbench-central-ragesaq/pull/19",
         "STARTER_MANIFEST.json",
         "AGENTS.md"
       ],
