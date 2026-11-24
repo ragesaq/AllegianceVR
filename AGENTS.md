@@ -36,6 +36,8 @@ commit `e98c3185`, HyperBench 0.43.0). [`STARTER_MANIFEST.json`](STARTER_MANIFES
 - **Work in flight:** `DAG.json`, one node per piece of work, ids `<owner>-<number>`. Its `rules` block is the
   contract. Update a node's `status`, `next` and `updated` in the same PR as the work. Before an action that could end
   the session or run long, add the node's `attempt` record first.
+  The rules block is the hub's canonical text, which `check_map.py` requires verbatim: where it says `main`, read
+  this fork's default branch, `master`.
 - **Finished work:** [`LEDGER.md`](LEDGER.md), one append-only line per node that reaches `done`. Node `ragesaq-000`
   stands for all history before adoption (2026-11-24).
 - **Short facts:** `memory/`, following [`docs/MEMORY_PROTOCOL.md`](docs/MEMORY_PROTOCOL.md). Each entry carries its

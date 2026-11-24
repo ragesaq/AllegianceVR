@@ -2,7 +2,7 @@
 """Refuse a work-map change that loses history the base still has.
 
     python3 tools/check_node_loss.py [base-ref] [--staged] [--allow-no-base]
-    # default base: origin/main
+    # default base: origin/master
 
 Three losses, each compared against the base because none is visible in
 the files alone (docs/STATE_MACHINES.md has the transition tables):
@@ -144,7 +144,7 @@ def staged_text(path):
 
 
 def main(argv):
-    base = next((a for a in argv[1:] if not a.startswith("-")), "origin/main")
+    base = next((a for a in argv[1:] if not a.startswith("-")), "origin/master")
     for arg in argv[1:]:
         if arg.startswith("--allow-drop"):
             print("check_node_loss: --allow-drop is not supported. A node is "

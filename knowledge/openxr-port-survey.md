@@ -26,10 +26,10 @@ are, and which parts of the community VR-modding workflow apply to a game whose 
 
 | Concern | Where | Notes |
 |---|---|---|
-| Device creation | `src/engine/D3DDevice9.cpp:119`, `CreateDevice` at :310–499 | FLIP or DISCARD swap effect. Resources in `D3DPOOL_MANAGED` (`VBIBManager.cpp`, `VRAMManager.cpp`, `surface.cpp`) |
+| Device creation | `src/engine/D3DDevice9.cpp:119`, `CreateDevice` at :310–600 | FLIP or DISCARD swap effect. Resources in `D3DPOOL_MANAGED` (`VBIBManager.cpp`, `VRAMManager.cpp`, `surface.cpp`) |
 | Present | `src/engine/D3DDevice9.cpp:884`, reached from `EngineWindow::DoIdle` (`src/engine/enginewindow.cpp:1122`, `RenderFrame` then `RenderFinished`) | Frame-loop hook point |
 | Projection | `src/engine/camera.cpp:85–100` | Symmetric, from one `m_focus`. VR needs asymmetric per-eye projection |
-| View matrix | `src/engine/camera.cpp:103–115`; set through `src/engine/device3d.cpp:483` (`D3DTS_PROJECTION`) and :533 (`D3DTS_VIEW`) | A software full matrix (`GetFullMatrix`, about :575) drives clipping and culling and must match |
+| View matrix | `src/engine/camera.cpp:103–115`; set through `src/engine/device3d.cpp`: `GenerateProjectionTransform` (:483) calls `SetTransform(D3DTS_PROJECTION, ...)` at :530, and `GenerateViewTransform` (:533) calls `SetTransform(D3DTS_VIEW, ...)` at :553 | A software full matrix (`GetFullMatrix`, about :575) drives clipping and culling and must match |
 | 3D layer setup | `src/engine/context.cpp:916` `Begin3DLayer` | Calls `Camera::Update` then sets both matrices |
 | Game camera | `CameraControl`, `src/WinTrek/WinTrek.cpp:285` | Already has a head-look hook: `SetHeadOrientation` (:302) feeds `m_orientationHead`, combined with ship orientation at :426. Spot-checked |
 | Comfort hazards | `src/WinTrek/WinTrek.cpp` :336–370 transitions, :375–395 afterburner shake, :398–422 aleph FOV warp | Disable or soften in VR mode |
