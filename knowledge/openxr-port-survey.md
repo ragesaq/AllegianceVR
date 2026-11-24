@@ -2,7 +2,7 @@
 
 **Owner:** ragesaq · **Started:** 2026-11-24 · **Last reviewed:** 2026-11-24 · **Review by:** 2027-02-24
 
-**Status:** in progress. The VR client will be built on AllegianceCore, not on this C++ fork (see Decision below).
+**Status:** settled for this fork. The VR client is built on AllegianceCore, not on this C++ fork (see Decision below). The work continues in [ragesaq/AllegianceCore-public](https://github.com/ragesaq/AllegianceCore-public), whose `knowledge/vr-client-survey.md` surveys the MonoGame client. This note stays as the record of the C++ engine survey and the lobby findings.
 
 ## What this answers
 
@@ -135,3 +135,5 @@ agent skill file, a prompt workflow with no code. *(read 2026-11)*
 - 2026-11-24: survey of upstream `c106531` and of the wizard repository. No code changed.
 - 2026-11-24: read the lobby's client checks, the FreeAllegiance wiki and forums on modified clients, and the
   AllegianceCore README. ragesaq decided to build the VR client on AllegianceCore.
+- 2026-11-24: ragesaq forked AllegianceCore as ragesaq/AllegianceCore-public, which was enrolled in HyperBench
+  (https://github.com/ragesaq/AllegianceCore-public/pull/1). The VR work item moved there.

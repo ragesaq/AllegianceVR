@@ -1,7 +1,7 @@
 # AllegianceVR agent instructions
 
 AllegianceVR is the operator's fork of [FreeAllegiance/Allegiance](https://github.com/FreeAllegiance/Allegiance), the
-open-source space combat game. The goal of the fork is a VR client built on OpenXR. The fork belongs to the
+open-source space combat game. The goal of the fork was a VR client built on OpenXR; on 2026-11-24 ragesaq moved that work to the AllegianceCore fork [ragesaq/AllegianceCore-public](https://github.com/ragesaq/AllegianceCore-public) (`knowledge/openxr-port-survey.md`). The fork belongs to the
 operator, **ragesaq**. Two agents work here: Port (Claude Code) and Socket (Codex). Both read this file as their rules.
 
 Work is tracked with HyperBench's memory, decision and orientation system (hub: `PsiClawOps/hyperbench`, taken at

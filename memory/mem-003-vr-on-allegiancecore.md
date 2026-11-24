@@ -15,5 +15,6 @@ C#/.NET 10 rewrite with an OpenGL MonoGame client), in a fork the operator
 owns. VR in this C++ fork was rejected: it needs Direct3D 9 interop on a
 32-bit renderer, and a modified build could play on the public lobby only
 once upstream accepts it. The decision, what it rejected, the lobby checks
-and the forum sources are in `knowledge/openxr-port-survey.md`. Work item:
-`ragesaq-002` in `DAG.json`.
+and the forum sources are in `knowledge/openxr-port-survey.md`. The fork is
+ragesaq/AllegianceCore-public; the work item moved there as its node
+`ragesaq-002`, and `ragesaq-002` here is parked.

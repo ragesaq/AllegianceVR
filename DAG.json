@@ -58,13 +58,14 @@
       "id": "ragesaq-002",
       "title": "OpenXR VR client for Allegiance, on AllegianceCore",
       "owner": "ragesaq",
-      "status": "active",
+      "status": "parked",
       "needs": [
         "ragesaq-001"
       ],
-      "next": "ragesaq decided 2026-11-24 to build the VR client on AllegianceCore (knowledge/openxr-port-survey.md, memory/mem-003). ragesaq is creating the fork of dominusbelial/AllegianceCore-public. Then: enroll the fork in HyperBench, survey its MonoGame renderer for an OpenXR binding (GL context and texture access, per-eye cameras, HUD), and define milestone 1 there: the game scene in a headset with the HUD on a quad layer.",
+      "next": "Parked here, not abandoned: the VR work moved to the AllegianceCore fork on 2026-11-24 (ragesaq decided to build the VR client on AllegianceCore; knowledge/openxr-port-survey.md, memory/mem-003). It continues as node ragesaq-002 in the fork's DAG.json, enrolled by ragesaq/AllegianceCore-public#1. Reopen here only if the C++ client becomes the VR target again.",
       "links": [
-        "knowledge/openxr-port-survey.md"
+        "knowledge/openxr-port-survey.md",
+        "https://github.com/ragesaq/AllegianceCore-public/pull/1"
       ],
       "updated": "2026-11-24"
     }
