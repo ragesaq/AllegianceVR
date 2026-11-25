@@ -4,6 +4,28 @@ One folder per cross-family review, newest first. Each folder holds the reviewer
 `receipt.md`. The reviewer's activity logs and wrapper state stay on the reviewing host (`GROUND_RULES.md` rule 3).
 The route is set in `AGENTS.md`, "Cross-family review route".
 
+## 2026-11-25: PR #3 agents merge and change settings on operator approval, round 1
+
+- Record: [summary](patch-review-2026-11-25T01-30-00Z-allegiancevr-approval-r1/summary.md), [receipt](patch-review-2026-11-25T01-30-00Z-allegiancevr-approval-r1/receipt.md)
+- The committed summary is the reviewer's text, unchanged (it holds no machine paths).
+- Reviewed head `83c0d31`, tree `2681052`, PR #3's own change `276123c..83c0d31`, in a standalone clone. Reviewer
+  `deepseek-v4.1-flash` via OpenCode Go at `high`, explicit selection, matrix 4.14.0.
+- Verdict: PASS-WITH-CONDITIONS. The rule is faithful to the operator's two statements, closes standing, relayed and
+  file-borne approval, and weakens neither prime rule 2 nor prime rule 3. Dispositions:
+  1. Low, `mem-004` said rule 4 is "in the same words as" AllegianceCore-public PR #5: fixed. It now names the two
+     differences.
+  2. Low, "any build and test gate they name" had no antecedent: fixed differently. The reviewer suggested "the
+     operator names", but the gates are the ones the "Review gates" section lists, so rule 4 now says "each build
+     and test gate listed there passes" (the same fix as the fork's PR #5 round 3).
+  3. Low, the gloss read as the whole merge checklist: fixed. Rule 4 now says "all the review gates below",
+     "including these", and that the review result is committed as well as posted.
+  4. Low, the stamping sentence holds only for a merge commit: fixed, it now says "A merge commit made in GitHub".
+  5. Low, the PR body said the wording was taken after the fork's first review: fixed in the body.
+  - Observation, a settings approval given in a working session has no Issue or pull request to record it in:
+    fixed. The change is then recorded in a new Issue. The fork's PR #5 gets the same sentence.
+  - Observation, the vendored `hyperbench-lifecycle` skill still says "The operator merges" for the enrollment
+    step: left as it is. It is hub text, and this repository's `AGENTS.md` overrides it; it belongs upstream.
+
 ## 2026-11-24: PR #1 HyperBench enrollment, round 3
 
 - Record: [summary](patch-review-2026-11-24T07-56-50Z-hyperbench-enrollment-r3/summary.md),
