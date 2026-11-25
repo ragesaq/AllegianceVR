@@ -4,7 +4,7 @@ topic: merge-and-settings-approval
 class: witnessed
 observed: 2026-11-24
 recorded-by: port
-seen-in: the operator's instructions to Port in its working session on the operator's Windows host, 2026-11-24
+seen-in: the operator's instructions to Port (Claude Code, Claude Opus 5.5) in its working session on the operator's Windows host, 2026-11-24
 ---
 
 # Agents merge, and change settings, only with the operator's approval
