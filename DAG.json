@@ -77,7 +77,7 @@
       "needs": [
         "ragesaq-001"
       ],
-      "next": "AGENTS.md prime rule 4 and memory/mem-004 record the operator's 2026-11-24 decision, PR #3 (stacked on PR #2), ported from ragesaq/AllegianceCore-public PR #5. Cross-family review round 1 at 83c0d31 gave PASS-WITH-CONDITIONS, all findings answered (.hyperreview/README.md); the answers await a round 2 delta review, then the operator's approval to merge after PR #1 and PR #2.",
+      "next": "AGENTS.md prime rule 4 and memory/mem-004 record the operator's 2026-11-24 decision, PR #3 (stacked on PR #2), ported from ragesaq/AllegianceCore-public PR #5. Cross-family review round 1 at 83c0d31 gave PASS-WITH-CONDITIONS, all findings answered; round 2 at ca23c0b gave PASS (.hyperreview/README.md). Waits on the operator's approval to merge after PR #1 and PR #2.",
       "links": [
         "https://github.com/ragesaq/AllegianceVR/pull/3",
         "AGENTS.md",

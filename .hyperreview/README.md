@@ -4,6 +4,22 @@ One folder per cross-family review, newest first. Each folder holds the reviewer
 `receipt.md`. The reviewer's activity logs and wrapper state stay on the reviewing host (`GROUND_RULES.md` rule 3).
 The route is set in `AGENTS.md`, "Cross-family review route".
 
+## 2026-11-25: PR #3 agents merge and change settings on operator approval, round 2
+
+- Record: [summary](patch-review-2026-11-25T02-00-00Z-allegiancevr-approval-r2/summary.md), [receipt](patch-review-2026-11-25T02-00-00Z-allegiancevr-approval-r2/receipt.md)
+- The committed summary is the reviewer's text, unchanged (it holds no machine paths).
+- Reviewed head `ca23c0b`, tree `a3865fa`, the delta `83c0d31..ca23c0b` that answers round 1, in a standalone clone.
+  Reviewer `deepseek-v4.1-flash` via OpenCode Go at `high`, explicit selection, matrix 4.14.0.
+- Verdict: PASS. Round 1's five findings and its session-record observation are answered, and the round 1 summary is
+  byte-identical to the original. Three observations, no change made:
+  - "listed there" could read as pointing at "these" rather than the gates below. The operative clause ("all the
+    review gates below are met") still binds, so nothing is waived.
+  - The new-Issue sentence is a recording duty the operator's words do not state; it constrains and does not permit.
+    A settings change that should not be described in public could need "unless the operator directs otherwise".
+    Left for the operator to decide.
+  - `mem-004`'s second difference can be checked only against the fork, which the review clone could not read. The
+    round 1 comment on this PR pins the fork's head `326f945`.
+
 ## 2026-11-25: PR #3 agents merge and change settings on operator approval, round 1
 
 - Record: [summary](patch-review-2026-11-25T01-30-00Z-allegiancevr-approval-r1/summary.md), [receipt](patch-review-2026-11-25T01-30-00Z-allegiancevr-approval-r1/receipt.md)
