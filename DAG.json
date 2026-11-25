@@ -68,6 +68,22 @@
         "https://github.com/ragesaq/AllegianceCore-public/pull/1"
       ],
       "updated": "2026-11-24"
+    },
+    {
+      "id": "ragesaq-003",
+      "title": "Agents merge and change settings only with the operator's approval",
+      "owner": "ragesaq",
+      "status": "review",
+      "needs": [
+        "ragesaq-001"
+      ],
+      "next": "AGENTS.md prime rule 4 and memory/mem-004 record the operator's 2026-11-24 decision, ported from ragesaq/AllegianceCore-public PR #5. Awaits cross-family review, then the operator's approval to merge after PR #1 and PR #2.",
+      "links": [
+        "AGENTS.md",
+        "memory/mem-004-merge-and-settings-approval.md",
+        "https://github.com/ragesaq/AllegianceCore-public/pull/5"
+      ],
+      "updated": "2026-11-24"
     }
   ]
 }

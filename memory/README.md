@@ -28,6 +28,7 @@ repo wins. Report the disagreement and supersede the entry.
 | mem-001 | hyperbench-scope | verified | 2026-11-24 | Adopted scope (memory, map, knowledge, recall with vectors) and the two-agent rules, at operator direction |
 | mem-002 | renderer-d3d9-win32 | verified | 2026-11-24 | Fixed-function D3D9, Win32-only build; OpenXR needs interop; see the survey note |
 | mem-003 | vr-on-allegiancecore | verified | 2026-11-24 | Operator decision: the VR client is built on AllegianceCore in ragesaq/AllegianceCore-public, not on this C++ fork |
+| mem-004 | merge-and-settings-approval | witnessed | 2026-11-24 | Operator decision: agents merge, or change settings, only with the operator's approval for that one change |
 
 Add a row here in the same pull request that adds the entry file; `tools/check_memory.py` fails if the index and the store drift apart.
 
