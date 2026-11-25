@@ -89,6 +89,6 @@ removed.
 | Subject | What it answers | Owner | Last reviewed |
 |---|---|---|---|
 
-| [OpenXR port survey](openxr-port-survey.md) | Where VR attaches to the engine, which rendering path, risks, and what the VR-modding wizard workflow contributes | ragesaq | 2026-11-24 |
+| [OpenXR port survey](openxr-port-survey.md) | The decision to build VR on AllegianceCore, whether a modified C++ client can join the public lobby, where VR attaches to the C++ engine, and what the VR-modding wizard workflow contributes | ragesaq | 2026-11-24 |
 
 Copy [`TEMPLATE.md`](TEMPLATE.md) to `knowledge/<subject>.md` for a new subject, and add its row here in the same change.
