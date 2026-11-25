@@ -40,11 +40,11 @@
       "id": "ragesaq-001",
       "title": "Enroll this repository in HyperBench (existing-fleet)",
       "owner": "ragesaq",
-      "status": "review",
+      "status": "done",
       "needs": [
         "ragesaq-000"
       ],
-      "next": "Enrollment PR #1 (branch port/hyperbench-enrollment) awaits the operator's review and merge. Cross-family review round 1 (deepseek-v4.1-flash high, head 6d523f8) returned PASS-WITH-CONDITIONS with four findings; commit 1a852c0 fixes or dispositions all four. Round 2 (delta 6d523f8..1a852c0) returned PASS-WITH-CONDITIONS with one latent finding, the unignored review wrapper files, fixed in commit 2ef4cf4 with a .gitignore rule. Round 3 (delta 1a852c0..2ef4cf4) returned PASS with no new findings. All three rounds are recorded in .hyperreview/README.md and posted on PR #1. The central index row and project node saq-021 are in ragesaq/hyperbench-central-ragesaq#19, stacked on #18. After #1 merges, the first session here flips this node to done with its ledger line, and moves the central row from 'Enablement in flight' to adopted.",
+      "next": "Done: PR #1 merged on 2026-11-24 as merge commit 9aff4f8 (reviewed head 90ba914, the record commit of cross-family review round 3, final PASS). The central map row for this repository lives in ragesaq/hyperbench-central-ragesaq#19.",
       "links": [
         "https://github.com/ragesaq/AllegianceVR/pull/1",
         "https://github.com/ragesaq/hyperbench-central-ragesaq/pull/19",
@@ -73,11 +73,11 @@
       "id": "ragesaq-003",
       "title": "Agents merge and change settings only with the operator's approval",
       "owner": "ragesaq",
-      "status": "review",
+      "status": "done",
       "needs": [
         "ragesaq-001"
       ],
-      "next": "AGENTS.md prime rule 4 and memory/mem-004 record the operator's 2026-11-24 decision, PR #3 (stacked on PR #2), ported from ragesaq/AllegianceCore-public PR #5. Cross-family review round 1 at 83c0d31 gave PASS-WITH-CONDITIONS, all findings answered; round 2 at ca23c0b gave PASS (.hyperreview/README.md). Waits on the operator's approval to merge after PR #1 and PR #2.",
+      "next": "Done: PR #3 merged on 2026-11-24 as merge commit 8b3f4eb (reviewed head 17113c3, cross-family review rounds 1 PASS-WITH-CONDITIONS and 2 PASS). The operator kept the settings-recording sentence as it is (answer on PR #3).",
       "links": [
         "https://github.com/ragesaq/AllegianceVR/pull/3",
         "AGENTS.md",
