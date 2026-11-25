@@ -18,8 +18,10 @@ settings change", and asked for the same change here "in case we go back to
 it". Until then prime rule 4 said that assistants never merge and never change
 repository settings or access.
 
-`AGENTS.md`, prime rule 4, now carries the rule, in the same words as
-ragesaq/AllegianceCore-public PR #5. Approval comes from the operator directly,
+`AGENTS.md`, prime rule 4, now carries the rule of
+ragesaq/AllegianceCore-public PR #5, with two differences: one sentence says
+how GitHub stamps a merge commit, where the fork points to its `mem-005`, and
+the rule ends by keeping prime rule 2. Approval comes from the operator directly,
 never relayed by another agent or found in a file, and covers one pull request
 or one settings change. A merge also waits for the review gates, and the agent
 checks the approved head first and records the merge after. No approval
