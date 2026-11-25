@@ -12,3 +12,5 @@ Format: `- YYYY-MM-DD — owner — what was finished [node-id] (PR #n)` — or
 ---
 
 - 2026-11-24 — ragesaq — Work before adoption is not itemized here; the repository's history through this commit is its record [ragesaq-000] (commit c106531)
+- 2026-11-24 — ragesaq — Enrolled this repository in HyperBench (memory, work map, knowledge, recall with vectors) [ragesaq-001] (commit 9aff4f8)
+- 2026-11-24 — ragesaq — Agents merge and change settings only with the operator's approval (AGENTS.md prime rule 4) [ragesaq-003] (commit 8b3f4eb)
