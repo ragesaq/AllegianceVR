@@ -77,8 +77,9 @@
       "needs": [
         "ragesaq-001"
       ],
-      "next": "AGENTS.md prime rule 4 and memory/mem-004 record the operator's 2026-11-24 decision, ported from ragesaq/AllegianceCore-public PR #5. Awaits cross-family review, then the operator's approval to merge after PR #1 and PR #2.",
+      "next": "AGENTS.md prime rule 4 and memory/mem-004 record the operator's 2026-11-24 decision, PR #3 (stacked on PR #2), ported from ragesaq/AllegianceCore-public PR #5. Awaits cross-family review, then the operator's approval to merge after PR #1 and PR #2.",
       "links": [
+        "https://github.com/ragesaq/AllegianceVR/pull/3",
         "AGENTS.md",
         "memory/mem-004-merge-and-settings-approval.md",
         "https://github.com/ragesaq/AllegianceCore-public/pull/5"
